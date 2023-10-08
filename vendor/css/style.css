@@ -1,0 +1,2463 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    /* Prmary */
+    --primary: #FFD700;
+    --primary-dark: #e2c102;
+
+    /* BackGround */
+    --BG01-Primary: #f8f5e9;
+
+    /* Text */
+    --primary-text: #FFFDF6;
+    --headings: #1F1F1F;
+    --headings-small: #181A20;
+    --black: #000000;
+    --white: #FFFFFF;
+
+    /* Border */
+    --border-gray: #ECEDEE;
+
+    /* transition */
+    --transition-half-s: 0.5s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--BG01-Primary);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--headings);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    /* border: none; */
+}
+
+input:focus {
+    outline: none;
+    color: var(--headings);
+}
+
+body {
+    background-color: var(--white);
+}
+
+.dislpay-none {
+    display: none;
+    transition: var(--transition-half-s);
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar Start */
+.sidebar-main-container {
+    width: 230px;
+    padding: 12px;
+    background-color: var(--BG01-Primary);
+    border-right: 1px solid var(--border-gray);
+}
+
+.hide-sidebar {
+    width: 86px;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container a {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {}
+
+.logo-container h3 {
+    color: var(--headings);
+    font-size: 21.328px;
+    font-weight: 500;
+    padding-left: 8px;
+}
+
+.toggle-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.toggle-box-container-show {
+    position: absolute;
+    background-color: var(--white);
+    transform: rotate(180deg);
+    transition: var(--transition-half-s);
+    left: 80px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.toggle-box-container:hover {
+    background-color: var(--white);
+    transition: var(--transition-half-s);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.toggle-box-container svg {}
+
+.sidebar-menu-section {}
+
+.sidebar-ul {
+    margin-top: 20px;
+}
+
+.sidebar-li {
+    margin-top: 4px;
+    border-radius: 8px;
+    transition: var(-transition-half-s);
+}
+
+.sidebar-icon-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-li:hover {
+    /* background-color: red; */
+    background-color: var(--white);
+}
+
+.sidebar-li a {
+    display: flex;
+    align-items: center;
+    transition: var(-transition-half-s);
+    padding: 12px;
+}
+
+.sidebar-li a:hover span {
+    color: #000000;
+}
+
+.sidebar-li a span {
+    color: #81888F;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+/* Sidebar end */
+
+/* RightSide Content Start */
+.right-content-section {
+    width: calc(100% - 230px);
+}
+
+.right-content-section-flex {
+    width: 90%;
+    width: calc(100% - 86px);
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 32px 15px 32px;
+    width: 100%;
+    background-color: var(--BG01-Primary);
+    border-bottom: 2px solid var(--border-gray);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container svg {
+    position: relative;
+    right: -40px;
+    margin-left: -24px;
+}
+
+.search-container input {
+    color: var(--headings);
+    width: 100%;
+    padding: 16px 16px 16px 46px;
+    border-radius: 8px;
+    border: 2px solid var(--border-gray);
+    background-color: var(--white);
+    width: 600px;
+    transition: var(--transition-half-s);
+}
+
+.search-container input:focus {
+    border: 2px solid var(--primary);
+}
+
+.search-container input::placeholder {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header-notification-section {
+    display: flex;
+    align-items: center;
+}
+
+.header-notification-section a {
+    display: flex;
+}
+
+.header-notification-section svg {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+/* RightSide Content end */
+
+/* RightSide Inner Content Start */
+.right-content-inner-section {
+    padding: 32px;
+}
+
+.right-content-inner-section h2 {
+    color: var(--headings);
+    font-family: Noto Sans;
+    font-size: 28.43px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.right-content-inner-section span {}
+
+
+.form-div {
+    margin-bottom: 20px;
+}
+
+.form-div label {
+    color: var(--headings);
+    font-family: Noto Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+.form-div input {
+    display: flex;
+    width: 600px;
+    padding: 16px 16px;
+    border-radius: 8px;
+    font-family: Noto Sans;
+    border: 2px solid var(--Border, #ECEDEE);
+    background: var(--White, #FFF);
+    transition: var(--transition-half-s);
+}
+
+.form-div textarea {
+    width: 600px;
+    padding: 16px 16px;
+    border-radius: 8px;
+    font-family: Noto Sans;
+    border: 2px solid var(--Border, #ECEDEE);
+    background: var(--White, #FFF);
+    transition: var(--transition-half-s);
+}
+
+.form-div input:focus {
+    border: 2px solid var(--primary);
+}
+
+.form-div textarea:focus {
+    border: 2px solid var(--primary);
+
+}
+
+
+.input-align {
+    display: flex;
+    align-items: center;
+}
+
+.input-align svg {
+    position: relative;
+    right: -40px;
+    margin-left: -24px;
+}
+
+.input-align input {
+    padding: 16px 16px 16px 46px;
+}
+
+.input-align input::placeholder {
+    font-size: 14px;
+}
+
+
+
+.upload-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 14px 0px;
+    width: 600px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--primary);
+    border-radius: 8px;
+    border: 2px solid var(--primary);
+    transition: 0.5s ease-in-out;
+}
+
+.upload-button:hover svg path {
+    transition: var(--transition-half-s);
+}
+
+.upload-button:hover {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.upload-button:hover svg path {
+    fill: #FFFFFF !important;
+}
+
+.upload-button input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.manage-div {
+    width: 600px;
+    padding: 14px 24px;
+}
+
+.manage-div ul {}
+
+.manage-div ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    border-top: 1px solid var(--border-gray);
+}
+
+.manage-div ul li:nth-child(4) {
+    border-bottom: 1px solid var(--border-gray);
+
+}
+
+.manage-div ul li p {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.manage-div ul li span a {
+    color: var(--Primary, #FFD700);
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration-line: underline;
+    margin-left: 8px;
+}
+
+.submit-btn {
+    display: flex;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: var(--primary);
+
+    color: var(--white);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 500;
+    transition: var(--transition-half-s);
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+/* RightSide Inner Content End */
+
+
+/* Franchise inventory page start */
+.right-content-inner-section-2 h2 {
+    padding-bottom: 5px;
+}
+
+.right-content-inner-section-2 p {
+    display: flex;
+    align-items: center;
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.right-content-inner-section-2 p svg {
+    margin-left: 5px;
+}
+
+.inventory-detail-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.inventory-detail-box {
+    border-right: 1px solid var(--border-gray);
+    padding: 0px 0px 0px 24px;
+}
+
+.inventory-detail-box:nth-child(1) {
+    padding: 0px 0px 0px 0px;
+}
+
+.inventory-detail-box:nth-child(4) {
+    border-right: none;
+}
+
+.inventory-detail-box h5 {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.inventory-number {
+    display: flex;
+    align-items: center;
+}
+
+.inventory-number p {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 37.897px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+.inventory-number .inventory-good {
+    display: inline-flex;
+    padding: 5px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background: #D3FAD5;
+
+    color: #23E72B;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.inventory-number .inventory-less {
+    display: inline-flex;
+    padding: 5px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background: #FAD3D3;
+
+    color: #E72323;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+
+
+.tablehead-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.addLocationProduct-sortby-adjust {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.addLocationProduct-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.addLocationProduct-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 15px 5px 5px;
+    color: #81888F;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.addLocationProduct-toggle svg {
+    margin-right: 20px;
+}
+
+.addLocationProduct-arrow {
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border-right: 1px solid #81888F;
+    border-bottom: 1px solid #81888F;
+    transform: rotate(45deg);
+    margin-left: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.addLocationProduct-toggle.open .addLocationProduct-arrow {
+    transform: rotate(-135deg);
+}
+
+.addLocationProduct-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 170px;
+    color: #000100;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fff;
+    border-top: none;
+    border-radius: 12px;
+    max-height: 0;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px rgba(130, 130, 130, 0.10), 0px 4px 9px 0px rgba(130, 130, 130, 0.10), 0px 17px 17px 0px rgba(130, 130, 130, 0.09), 0px 38px 23px 0px rgba(130, 130, 130, 0.05), 0px 68px 27px 0px rgba(130, 130, 130, 0.01), 0px 106px 30px 0px rgba(130, 130, 130, 0.00);
+    transition: max-height 0.3s ease-in-out;
+}
+
+.addLocationProduct-toggle.open+.addLocationProduct-dropdown-menu {
+    max-height: 240px;
+    overflow-y: none;
+}
+
+.addLocationProduct-option {
+    display: block;
+    padding: 10px;
+    color: #000100;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.addLocationProduct-option:hover {
+    background-color: #f1f1f1;
+}
+
+.addNewFrenchise-btn {
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 300;
+    background-color: var(--primary);
+    transition: 0.5s ease-in-out;
+}
+
+.addNewFrenchise-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.addNewFrenchise-btn img {
+    margin-right: 5px;
+}
+
+.addLocationBusiness-dashboard-section {
+    margin-top: 15px;
+    /* border: 1px solid #BDBDBD; */
+    /* overflow: hidden; */
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead tr {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+th {
+    color: #1F1F1F;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 14px 0px 12px 14px;
+    text-align: left;
+    background-color: #fff;
+}
+
+td {
+    color: #1F1F1F;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 14px 0px 12px 14px;
+    text-align: left;
+    background-color: #FFFFFF;
+}
+
+tbody tr td .data {
+    display: flex;
+    align-items: center;
+}
+
+tbody tr td .data {
+    color: #181A20;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+.data-doc a {
+    color: var(--primary);
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+
+tbody tr td .data img {
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: #FFFFFF;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #F5F5F5;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #dddddd;
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+    outline: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+input[type="radio"]:checked {
+    background-color: #000;
+}
+
+input[type="radio"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.dashboard-btn-container {
+    display: flex;
+}
+
+.save-button {
+    padding: 5px 10px;
+    color: FD961B;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: transparent;
+    margin-right: 15px;
+}
+
+.edit-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6px 20px 6px 16px;
+    border-radius: 8px;
+    border: none;
+    color: #101010;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-style: normal;
+    margin-right: 15px;
+    background-color: transparent;
+    transition: 0.5s ease-in-out;
+}
+
+.remove-button {
+    display: flex;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    /* color: #FD1B1B; */
+    font-size: 0.9rem;
+    background-color: transparent;
+    font-weight: 500;
+    font-style: normal;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+.remove-button img {
+    margin-right: 5px;
+}
+
+
+/* Franchise inventory page End */
+
+/* Franchise inventory Document page Start */
+.documentPopup-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.documentPopup-container {
+    position: relative;
+    border-radius: 12px;
+    border: 2px solid var(--border-gray);
+    background: var(--white);
+    padding: 60px 20px;
+    height: 400px;
+    width: 600px;
+}
+
+.documentPopup-container svg {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.documentPopup-container h3 {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 21.328px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.documentPopup-container h5 {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+.manage-div-2 {
+    margin-top: 40px;
+}
+
+.manage-div-2 ul {}
+
+.manage-div-2 ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    border-top: 1px solid var(--border-gray);
+}
+
+.manage-div-2 ul li:nth-child(4) {
+    border-bottom: 1px solid var(--border-gray);
+
+}
+
+.manage-div-2 ul li p {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.manage-div-2 ul li span a {
+    color: var(--primary);
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration-line: underline;
+    margin-left: 8px;
+}
+
+/* Franchise inventory page Document End */
+
+/* AD inventory page Start */
+.adv-h3 {
+    color: var(--headings);
+    font-family: Noto Sans;
+    font-size: 21.328px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.ad-inventory-detail-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.ad-inventory-detail-box {
+    border-right: 1px solid var(--border-gray);
+    padding: 0px 0px 0px 24px;
+}
+
+.ad-inventory-detail-box:nth-child(1) {
+    padding: 0px 0px 0px 0px;
+}
+
+.ad-inventory-detail-box:nth-child(5) {
+    border-right: none;
+}
+
+.ad-inventory-detail-box h5 {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.ad-inventory-detail-box p {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 28.897px;
+    font-weight: 500;
+}
+
+.ad-graph-container {
+    width: 100%;
+}
+
+.ad-graph-container img {
+    width: 100%;
+
+}
+
+/* AD inventory page End */
+
+/* Representative Training page Start */
+
+.status-completed-pill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 100px;
+    padding: 5px 0px;
+    background-color: #219653;
+    text-align: center;
+
+    color: #fff !important;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.status-inprogress-pill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 100px;
+    padding: 5px 0px;
+    background-color: #F2C94C;
+    text-align: center;
+    color: #1F1F1F !important;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.status-cancelled-pill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 100px;
+    padding: 5px 0px;
+    background-color: #EB5757;
+    text-align: center;
+    color: #fff !important;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.data-img {
+    width: 32px;
+    height: 32px;
+    display: flex;
+}
+
+.data-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.data-img img:nth-child(2) {
+    margin-left: -25px;
+}
+
+.data-img img:nth-child(3) {
+    margin-left: -25px;
+}
+
+.data-img img:nth-child(4) {
+    margin-left: -35px;
+}
+
+.img-num-circle {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    color: var(--white);
+    border: 1px solid var(--border-gray);
+    background-color: #B0B0B0;
+    padding: 11px 8px;
+    margin-left: -25px;
+}
+
+/* Representative Training page End */
+
+/* Representative Training Form page Start */
+.onboard-set-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.onboarding-staff-selected-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.onboarding-staff-selected-box {
+    background-color: var(--BG01-Primary);
+    padding: 5px 8px;
+    border-radius: 4px;
+    border: 1px solid var(--border-gray);
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.onboarding-staff-selected-box img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid var(--border-gray);
+}
+
+.onboarding-staff-selected-box p {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.onboarding-staff-selected-box svg {
+    margin-left: 20px;
+}
+
+.representative-dox-container {
+    width: 600px;
+    margin-bottom: 30px;
+}
+
+.representative-dox-container table {}
+
+.representative-dox-container table thead {}
+
+.representative-dox-container table thead tr {
+    border-top: 1px solid var(--border-gray);
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.representative-dox-container table thead tr th {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: var(--BG01-Primary);
+    text-align: center;
+}
+
+.representative-dox-container table thead tr th:nth-child(1) {
+    text-align: left;
+}
+
+.representative-dox-container table tbody {}
+
+.representative-dox-container table tbody tr {}
+
+.representative-dox-container table tbody tr td {
+    color: var(--headings-small);
+    text-align: center;
+    background-color: transparent;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.representative-dox-container table tbody td span {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.representative-dox-container table tbody td span a {
+    color: var(--primary);
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+
+.staff-img-div {
+    display: flex;
+    align-items: center;
+}
+
+.staff-img-div img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid var(--border-gray);
+}
+
+.staff-img-div p {
+    color: var(--black) !important;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+/* Representative Training Form page End */
+
+
+/* Representatives Training - Onboarding Staff page Start */
+.representative-dox-container-2 {
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.documentPopup-container-staff {
+    overflow: auto;
+}
+
+.documentPopup-container-staff::-webkit-scrollbar {
+    width: 5px;
+}
+
+.documentPopup-container-staff::-webkit-scrollbar-track {
+    background-color: transparent;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.documentPopup-container-staff::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #ECF0F4;
+}
+
+/* Representatives Training - Onboarding Staff page End */
+.form-div label span {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.input-align {
+    width: 600px;
+    position: relative;
+}
+
+.input-align .calander-svg {
+    position: absolute;
+    right: 20px;
+}
+
+.calander-input {
+    padding-left: 16px !important;
+    color: #81888F;
+}
+
+/* .calander-input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  } */
+/* Representatives Training - Onboarding Staff page End */
+
+
+/* Business Plan pages Start */
+.businessPlan-inventory-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+}
+
+.businessPlan-inventory-box {
+    padding: 30px 0px;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.businessPlan-inventory-box .businessPlan-inventory-inner-box {}
+
+.businessPlan-inventory-inner-box-2 {
+    border-left: 1px solid var(--border-gray);
+    padding-left: 30px;
+}
+
+
+.businessPlan-inventory-box .businessPlan-inventory-inner-box svg {}
+
+.businessPlan-inventory-box .businessPlan-inventory-inner-box h5 {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+/* Business Plan pages End */
+
+/* Business Plan Presentation pages Start */
+.businessPlan-presentation-section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.business-head-spacing {}
+
+.business-head-spacing h2 {
+    padding: 0px;
+}
+
+.business-head-spacing span {
+    display: flex;
+    align-items: center;
+}
+
+.business-head-spacing span svg {
+    margin-right: 5px;
+}
+
+.business-head-spacing span h5 {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.businessPlan-presentation-section-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    margin-top: 40px;
+}
+
+.businessPlan-presentation-section-content-box {
+    border: 1px solid var(--border-gray);
+    border-radius: 20px;
+}
+
+.businessPlan-presentation-section-content-box-img {
+    position: relative;
+}
+
+.businessPlan-presentation-section-content-box-img .opt-3dots {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+}
+
+.businessPlan-presentation-section-content-box-img img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.businessPlan-presentation-section-content-box-text {
+    padding: 20px 24px;
+    background-color: var(--BG01-Primary);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.businessPlan-presentation-section-content-box-text h3 {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.businessPlan-presentation-section-content-box-text span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.businessPlan-presentation-section-content-box-text span h5 {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.businessPlan-presentation-section-content-box-text span p {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Business Plan Presentation pages Start */
+
+/* business Inventory Products pages Start */
+.businessInventoryProducts-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding-top: 40px;
+}
+
+.businessInventoryProducts-box {
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid var(--Border, #ECEDEE);
+    background-color: var(--BG01-Primary);
+    position: relative;
+}
+
+.addBusinessProduct-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.addBusinessProduct-box h6 {
+    color: var(--primary);
+    font-family: Noto Sans;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 16px;
+}
+
+.businessInventoryProducts-img-box {
+    display: flex;
+    align-items: center;
+}
+
+
+.businessInventoryProducts-img-box img {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+}
+
+.businessInventoryProducts-img-box h5 {
+    color: var(--headings);
+    font-family: Noto Sans;
+    font-size: 21.328px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+
+.businessInventoryProducts-box a p {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 14px;
+}
+
+.opt-3dots {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+}
+
+.businessInventoryProducts-viewmore-btn {
+    color: var(--primary);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--BG01-Primary);
+    margin-top: 30px;
+}
+
+/* business Inventory Products pages End */
+
+
+/* mindMap View pages Start */
+.mindMap-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mindMap-container {
+    position: relative;
+    border-radius: 12px;
+    border: 2px solid var(--border-gray);
+    background: var(--white);
+    padding: 60px 20px;
+    width: 700px;
+}
+
+.mindMap-container svg {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.mindMap-container h3 {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 21.328px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.mindMap-container h5 {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.mindMap-container img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+/* mindMap View pages End */
+
+
+/* mindMap Canvas pages Start */
+.mindMapCanvas-section {
+    padding: 40px;
+}
+
+.mindMapCanvas-box-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.idea-box {
+    font-family: Noto Sans;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 40px;
+}
+
+.idea-box-yellow {
+    background-color: #FFE8A3;
+}
+
+.idea-box-blue {
+    background-color: #AFF4C6;
+}
+
+.idea-box-green {
+    background-color: #BDE3FF;
+}
+
+.idea-box-purple {
+    background-color: #E4CCFF;
+}
+
+.mindMapCanvas-box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.mindMapCanvas-box-2 span {
+    background-color: #FFCD29;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+
+.mindMapCanvas-box-2-purple span {
+    background-color: #9747FF;
+    margin-bottom: 24px;
+    color: var(--white);
+}
+
+.mindMapCanvas-box-center {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.mindMapCanvas-box-center-1 .idea-box {
+    margin-bottom: 20px;
+}
+
+.mindMapCanvas-box-center-1 .idea-box:nth-child(3) {
+    margin-bottom: 0px;
+}
+
+.mindMapCanvas-box-center-mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    width: 100%;
+}
+
+.mindMapCanvas-box-center-mid-pill {
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+
+.mindMapCanvas-box-center-mid-pill-purple {
+    background-color: #9747FF;
+    color: var(--white);
+
+}
+
+.mindMapCanvas-box-center-mid-pill-purple-green {
+    background-color: #14AE5C;
+    color: var(--white);
+}
+
+.mindMapCanvas-box-center-question-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px 20px;
+    color: var(--white);
+    background-color: #1E1E1E;
+}
+
+
+/* mindMap Canvas pages End */
+
+
+/* financialInventoryProject pages Start */
+.financialInventoryProject-head-box {
+    display: flex;
+    align-items: center;
+}
+
+.financialInventoryProject-head-box svg {
+    margin-right: 5px;
+}
+
+.financialInventoryProject-head-box p span {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+.inventory-detail-section-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.inventory-detail-box {
+    border-right: 1px solid var(--border-gray);
+    padding: 0px 0px 0px 24px;
+}
+
+.inventory-number p span {
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+}
+
+#columnchart_material {
+    margin-top: 50px;
+}
+
+/* financialInventoryProject pages End */
+
+
+/* financialInventoryProject pages Start */
+.financialInventoryProject-invoice-box {
+    margin-top: 30px;
+}
+
+.financialInventoryProject-invoice-box h5 {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 21.328px;
+    font-weight: 700;
+}
+
+.financialInventoryProject-invoice-box h5 span {
+    color: var(--primary);
+}
+
+.financialInventoryProject-invoice-box p {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.financialInventoryProject-invoice-box p span {
+    color: var(--headings-small);
+    font-weight: 500;
+}
+
+.form2 {}
+
+.form-bg {
+    padding-top: 20px;
+    border-radius: 16px 16px 0px 0px;
+    border: 1px solid var(--border-gray);
+    background: var(--BG01-Primary);
+    width: 750px;
+    padding: 24px;
+    margin-top: 32px;
+}
+
+.form2 h6 {
+    color: var(--primary);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.form2 .submit-btn {
+    margin-top: 20px;
+}
+
+.twoinputs-box {
+    display: flex;
+    gap: 20px;
+}
+
+.twoinputs-box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.red-cross {
+    width: 20px;
+    height: 20px;
+}
+
+.form-divform {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-divform label {
+    color: var(--headings);
+    font-family: Noto Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+.twoinputs-box-2 .form-divform label {
+    color: var(--headings);
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.form-divform input {
+    display: flex;
+    width: 100%;
+    padding: 16px 16px;
+    border-radius: 8px;
+    font-family: Noto Sans;
+    border: 2px solid var(--Border, #ECEDEE);
+    background: var(--White, #FFF);
+    transition: var(--transition-half-s);
+}
+
+.twoinputs-box .form-divform input:focus {
+    border: 2px solid var(--primary);
+}
+
+.twoinputs-box .form-divform textarea:focus {
+    border: 2px solid var(--primary);
+}
+
+.twoinputs-box-2 .form-divform input:focus {
+    border: 2px solid var(--primary);
+}
+
+.twoinputs-box-2 .form-divform textarea:focus {
+    border: 2px solid var(--primary);
+}
+
+.totalDiv-product {
+    display: flex;
+    padding: 16px 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 750px;
+    border-radius: 0px 0px 16px 16px;
+    border-top: 2px solid var(--Border, #ECEDEE);
+    background: var(--BG0-Hover, #ECF0F4);
+}
+
+.totalDiv-product span {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 21.328px;
+    font-weight: 400;
+}
+
+.totalDiv-product p {
+    color: var(--headings);
+    font-family: Noto Sans;
+    font-size: 21.328px;
+    font-weight: 500;
+}
+
+/* financialInventoryProject pages End */
+
+/* Financial Generate Invoice 2 pages Start */
+.totalDiv-product-account {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px 16px 0px;
+    border-top: 1px solid var(--White, #FFF);
+}
+
+.totalDiv-product-account {}
+
+.totalDiv-product-account img {
+    width: 32px;
+    height: 10.347px;
+}
+
+.totalDiv-product-2 {
+    display: block;
+    padding: 16px 50px;
+    width: 750px;
+    border-radius: 0px 0px 16px 16px;
+    border-top: 2px solid var(--Border, #ECEDEE);
+    background: var(--BG0-Hover, #ECF0F4);
+}
+
+.totalDiv-product-set {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invoice-div {
+    display: flex;
+    align-items: center;
+}
+
+.saveReceipt-btn {
+    display: flex;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+    cursor: pointer;
+    background: transparent;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: var(--primary);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 500;
+    transition: var(--transition-half-s);
+}
+
+.saveReceipt-btn:hover {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.saveReceipt-btn:hover svg path {
+    fill: #fff;
+}
+
+.tittalname-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 20px;
+}
+
+.tittalname-box-notes {
+    padding-bottom: 30px;
+}
+
+.financialInventoryProject-invoice-box-2 {
+    margin-top: 0px;
+}
+
+.invoice-product-list-box {
+    background-color: var(--white);
+    border-radius: 16px;
+    border: 1px solid var(--border-gray);
+    overflow: hidden;
+}
+
+.invoice-product-list-box table thead tr th {
+    background-color: #F2F2F2 !important;
+}
+
+.invoice-product-list-box table tbody tr td {
+    color: var(--Body01, #81888F);
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.invoice-product-list-box table tbody tr td {
+    padding-right: 10px;
+}
+
+/* Financial Generate Invoice 2 pages End */
+
+
+/* AIInventory pages Start */
+.customizeBusinessCards--reight-content-section {}
+
+.customizeBusinessCards--reight-content-section span {
+    display: flex;
+    align-items: center;
+}
+
+.customizeBusinessCards--reight-content-section span svg {
+    margin-right: 5px;
+}
+
+.customizeBusinessCards-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.customizeBusinessCards-box {
+    padding: 30px 0px;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+/* AIInventory pages End */
+
+
+.inbuildtemplate-logo-section {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+/* Entrepreneurship - Certificates pages Start */
+.business-head-spacing h5 {
+    display: flex;
+}
+
+.business-head-spacing h5 span {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-weight: 700;
+}
+
+.fileManager-section {
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.fileManager-head {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--BG01-Primary);
+    border-bottom: 2px solid var(--border-gray);
+}
+
+.fileManager-head h2 {
+    color: var(--headings);
+    font-family: Noto Sans;
+    font-size: 21.328px;
+    font-weight: 500;
+}
+
+.fileManager-head p {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fileManager-create-btn {
+    display: flex;
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    padding: 16px 10px;
+    width: 200px;
+    border-radius: 8px;
+    background: var(--primary);
+}
+
+.fileManager-create-btn svg {
+    margin-left: 5px;
+}
+
+
+
+.entrepreneurshipCertificates-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+}
+
+.entrepreneurshipCertificates-box {
+    padding: 30px 0px;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.entrepreneurshipCertificates-box .entrepreneurshipCertificates-inner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.entrepreneurshipCertificates-box .entrepreneurshipCertificates-inner-box h5 {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+
+/* Entrepreneurship - Certificates pages End */
+
+.financialInventoryProject-head-box-entro {
+    padding-bottom: 30px;
+}
+
+.entro-rating-container {
+    display: flex;
+    align-items: center;
+}
+
+.entro-rating-container p {
+    padding-left: 15px;
+}
+
+.entro-sharemedia-filter {
+    display: block !important;
+}
+
+.entro-sharemedia-filter input[type="radio"],
+.entro-sharemedia-filter input[type="checkbox"] {
+    display: none;
+}
+
+.entro-sharemedia-filter input[type="radio"]+label,
+.entro-sharemedia-filter input[type="checkbox"]+label {
+    position: relative;
+    display: inline-block;
+    padding-left: 1.5em;
+    margin-top: 15px;
+    cursor: pointer;
+    line-height: 1em;
+    transition: all 0.3s ease-in-out;
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.entro-sharemedia-filter input[type="radio"]+label:before,
+.entro-sharemedia-filter input[type="checkbox"]+label:before,
+.entro-sharemedia-filter input[type="radio"]+label:after,
+.entro-sharemedia-filter input[type="checkbox"]+label:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    color: white;
+    font-family: Times;
+    border-radius: 15%;
+    border: 1px solid #81888F;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.entro-sharemedia-filter input[type="radio"]+label:before {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em white;
+}
+
+.entro-sharemedia-filter input[type="radio"]+label:hover:before {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-shadow: inset 0 0 0 0.3em white, inset 0 0 0 1em #c6c6c6;
+}
+
+.entro-sharemedia-filter input[type="radio"]:checked+label:before {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em #f79420;
+}
+
+.entro-sharemedia-filter input[type="checkbox"]+label:before {
+    content: '✓';
+    border-radius: 4px;
+    background-color: white;
+    color: white;
+}
+
+.entro-sharemedia-filter input[type="checkbox"]+label:hover:before {
+    color: #f0f0f0;
+}
+
+.entro-sharemedia-filter input[type="checkbox"]:checked+label:before {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+/* talentScouting page Start */
+.talentScouting-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.talentScouting-container {
+    position: relative;
+    border-radius: 12px;
+    border: 2px solid var(--border-gray);
+    background: var(--white);
+    padding: 24px;
+    width: 700px;
+}
+
+.talentScouting-container .cross-of-scout {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.cv-model-box {}
+
+.cv-model-name-box {
+    display: flex;
+    align-items: center;
+}
+
+.cv-model-name-box img {
+    width: 100px;
+    height: 100px;
+}
+
+.cv-personName {
+    padding-left: 14px;
+}
+
+.cv-personName span {
+    display: flex;
+    align-items: center;
+}
+
+.cv-personName h2 {
+    color: var(--headings);
+    font-family: Noto Sans;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.cv-personName h5 {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cv-detail-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+}
+
+.cv-detail-box {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: var(--BG01-Primary);
+}
+
+.cv-detail-box:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid var(--border-gray);
+}
+
+.cv-detail-box h3:nth-child(1) {
+    color: var(--headings);
+    font-family: Noto Sans;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cv-detail-box h3:nth-child(2) {
+    color: var(--headings);
+    font-family: Noto Sans;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.cv-detail-box h3:nth-child(3) {
+    color: var(--headings);
+    font-family: Noto Sans;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cv-detail-box h5 {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0px 10px 0px;
+}
+
+.cv-detail-box h5 span {
+    position: relative;
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.cv-detail-box h5 span::before {
+    position: absolute;
+    content: " ";
+    margin-left: -15px;
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #ECEDEE;
+}
+
+.cv-detail-box p {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.cv-detail-box ul {
+    padding-bottom: 20px;
+}
+
+.cv-detail-box ul li {
+    margin-top: 10px;
+}
+
+.cv-detail-box ul li h5 {
+    color: var(--headings);
+    font-family: Noto Sans;
+    font-size: 12.003px;
+    font-weight: 600;
+}
+
+.cv-skill-rating-box {
+    position: relative;
+    width: 200px;
+    background-color: #fff;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid var(--border-gray);
+}
+
+.cv-skill-rating-box span {
+    color: var(--white);
+    font-family: Noto Sans;
+    font-size: 12.003px;
+    font-weight: 500;
+    z-index: 999;
+}
+
+.cv-skill-rating-box-inner {
+    position: absolute;
+    width: 180px;
+    left: 0;
+    height: 14px;
+    border-radius: 16px;
+    background: var(--primary);
+}
+
+.cv-skill-rating-box-inner-1 {
+    width: 190px !important;
+}
+
+.cv-skill-rating-box-inner-2 {
+    width: 150px !important;
+}
+
+.cv-skill-rating-box-inner-3 {
+    width: 170px !important;
+}
+
+.cv-rating-box {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.cv-rating-box svg {
+    margin-top: -5px;
+    margin-right: 2px;
+}
+
+.cv-rating-box svg:nth-child(5) {
+    margin-right: 10px;
+}
+
+.cv-box-adjust:nth-child(2) {
+    margin-top: 15px;
+}
+
+.cv-box-adjust:nth-child(3) {
+    margin-top: 15px;
+}
+
+.cv-box-adjust:nth-child(4) {
+    margin-top: 15px;
+}
+
+.cv-box-adjust:nth-child(5) {
+    margin-top: 15px;
+}
+
+.cv-box-adjust:nth-child(6) {
+    margin-top: 15px;
+}
+
+.cv-contact-conatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.cv-contact-conatiner ul {
+    display: flex;
+}
+
+.cv-contact-conatiner ul a {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cv-contact-conatiner ul a svg {
+    margin-right: 5px;
+}
+
+/* Talent Scouting page End */
+
+
+/* Customize Business Meeting page Start */
+.businessMeeting-head-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.businessMeeting-justify-head2 {
+    display: flex;
+    align-items: center;
+}
+
+.businessMeeting-month-select {
+    display: flex;
+    align-items: center;
+}
+
+.businessMeeting-leftarrow {
+    margin-right: 10px;
+}
+
+.businessMeeting-rightarrow {
+    margin-left: 10px;
+}
+
+.businessMeeting-centerContent {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding-top: 30px;
+}
+
+.businessMeeting-days-contant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.businessMeeting-days-contant h2 {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 50.517px;
+    font-weight: 500;
+}
+
+.businessMeeting-days-contant h5 {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.businessMeeting-days-contant .day-line {
+    width: 5px;
+    height: 40px;
+    background-color: #ECEDEE;
+    margin-top: 10px;
+}
+
+.businessMeeting-meetCard-section {
+    margin-top: 60px;
+}
+
+
+.businessMeeting-meetCard-box {
+    border-radius: 16px;
+    padding: 14px;
+    border: 1px solid #ECEDEE;
+    background-color: var(--BG01-Primary);
+}
+
+
+.businessMeeting-meetCard-box h5 {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.businessMeeting-meetCard-box h6 {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.businessMeeting-meetCard-box span {
+    color: var(--headings-small);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.businessMeeting-meetCard-box p {
+    color: #81888F;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.businessMeeting-meetCard-box-yellow {
+    background-color: var(--primary) !important;
+    border-radius: 16px;
+    padding: 14px;
+    border: 1px solid #ECEDEE;
+}
+.businessMeeting-meetCard-box-yellow h5 {
+    color: #ECF0F4;
+    font-family: Noto Sans;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+.businessMeeting-meetCard-box-yellow h6 {
+    color: var(--white);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.businessMeeting-meetCard-box-yellow span {
+    color: var(--white);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.businessMeeting-meetCard-box-yellow p {
+    color: #ECF0F4;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+/* Customize Business Meeting page End */
